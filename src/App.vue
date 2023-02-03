@@ -12,6 +12,24 @@
 </template>
 
 <style lang="scss">
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3C415C;
+  border-radius: 0.2rem;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: #B4A5A5;
+  }
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
