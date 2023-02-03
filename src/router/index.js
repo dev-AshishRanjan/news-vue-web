@@ -1,19 +1,47 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import GeneralView from '../views/GeneralView.vue'
+import BView from '../views/BusinessView.vue'
+import EView from '../views/EntertainView.vue'
+import HView from '../views/HealthView.vue'
+import ScView from '../views/ScienceView.vue'
+import SpView from '../views/SportsView.vue'
+import TView from '../views/TechView.vue'
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: GeneralView
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/entertainment',
+    name: 'entertainment',
+    component: EView
+  },
+  {
+    path: '/business',
+    name: 'business',
+    component: BView
+  },
+  {
+    path: '/health',
+    name: 'health',
+    component: HView
+  },
+  {
+    path: '/science',
+    name: 'science',
+    component: ScView
+  },
+  {
+    path: '/sports',
+    name: 'sports',
+    component: SpView
+  },
+  {
+    path: '/technology',
+    name: 'technology',
+    component: TView
   }
 ]
 
