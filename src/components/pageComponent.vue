@@ -33,10 +33,17 @@ export default {
   box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+  width: 100%;
+  background: #151515
+}
+
 .page {
   @include flexCenter;
   flex-wrap: wrap;
   gap: 1.5rem;
+  background: #151515;
 }
 
 .card {
